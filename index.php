@@ -20,7 +20,7 @@ $revenue = $revRow['s'];
 <body>
 
 <?php include "nav.php"; ?>
-<div class="navbar">
+<!-- <div class="navbar">
     <div class="logo">My System</div>
 
     <div class="nav-links">
@@ -31,7 +31,7 @@ $revenue = $revRow['s'];
         <a href="/assessment_beginner/pages/tools_list_assign.php">Tools</a>
         <a href="/assessment_beginner/pages/payments_list.php">Payments</a>
     </div>
-</div>
+</div> -->
 
 <h1>Dashboard</h1>
 
@@ -42,8 +42,8 @@ $revenue = $revRow['s'];
     <div class="card">Total Revenue: <?php echo number_format($revenue, 2); ?></div>
 <!-- <?php include "nav.php"; ?> -->
     <div class="links">
-        <a href="index.php">Add Client</a>
-        <a href="index.php">Create Booking</a>
+        <a class="add-btn" href="pages/clients_add.php">+ Add Client</a>
+        <a href="pages/bookings_add.php">Create Booking</a>
     </div>
 </div>
 

@@ -1,0 +1,72 @@
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    padding: 40px;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Add Button */
+.add-btn {
+    text-decoration: none;
+    background-color: #85E2FF;
+    color: #000;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #5fd4f7;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Header */
+th {
+    background-color: #8E2FAD;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+/* Cells */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Zebra */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Edit Button */
+.edit-btn {
+    text-decoration: none;
+    color: #8E2FAD;
+    font-weight: bold;
+}
+
+.edit-btn:hover {
+    text-decoration: underline;
+}
