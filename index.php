@@ -15,35 +15,43 @@ $revenue = $revRow['s'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
 <?php include "nav.php"; ?>
-<!-- <div class="navbar">
-    <div class="logo">My System</div>
 
-    <div class="nav-links">
-        <a href="/assessment_beginner/index.php">Dashboard</a>
-        <a href="/assessment_beginner/pages/clients_list.php">Clients</a>
-        <a href="/assessment_beginner/pages/services_list.php">Services</a>
-        <a href="/assessment_beginner/pages/bookings_list.php">Bookings</a>
-        <a href="/assessment_beginner/pages/tools_list_assign.php">Tools</a>
-        <a href="/assessment_beginner/pages/payments_list.php">Payments</a>
+<div class="container mt-4">
+    <h1 class="mb-4">Dashboard</h1>
+
+    <div class="row g-3">
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center p-3">
+                <h5>Total Clients</h5>
+                <h2><?php echo $clients; ?></h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center p-3">
+                <h5>Total Services</h5>
+                <h2><?php echo $services; ?></h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center p-3">
+                <h5>Total Bookings</h5>
+                <h2><?php echo $bookings; ?></h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow-sm text-center p-3">
+                <h5>Total Revenue</h5>
+                <h2>₱<?php echo number_format($revenue, 2); ?></h2>
+            </div>
+        </div>
     </div>
-</div> -->
 
-<h1>Dashboard</h1>
-
-<div class="dashboard">
-    <div class="card">Total Clients: <?php echo $clients; ?></div>
-    <div class="card">Total Services: <?php echo $services; ?></div>
-    <div class="card">Total Bookings: <?php echo $bookings; ?></div>
-    <div class="card">Total Revenue: <?php echo number_format($revenue, 2); ?></div>
-<!-- <?php include "nav.php"; ?> -->
-    <div class="links">
-        <a class="add-btn" href="pages/clients_add.php">+ Add Client</a>
-        <a href="pages/bookings_add.php">Create Booking</a>
+    <div class="mt-4 d-flex gap-2">
+        <a class="btn btn-primary" href="/pages/clients_add.php">+ Add Client</a>
     </div>
 </div>
 
