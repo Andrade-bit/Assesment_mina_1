@@ -18,6 +18,7 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
             <h4 class="mb-0">Clients List</h4>
             <a href="clients_add.php" class="btn btn-primary btn-sm">+ Add Client</a>
         </div>
+        
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">

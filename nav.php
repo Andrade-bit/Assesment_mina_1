@@ -1,3 +1,5 @@
+<!-- nav.php -->
+
 <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,14 +32,19 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link <?php if(in_array($current_page, ['bookings_list.php','bookings_add.php','bookings_edit.php'])) echo 'active'; ?>"
-             href="/pages/bookings_list.php">Bookings</a>
+          <a class="nav-link <?php if(in_array($current_page, ['bookings_create.php','bookings_add.php','bookings_edit.php'])) echo 'active'; ?>"
+             href="/pages/bookings_create.php">Bookings</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link <?php if(in_array($current_page, ['tools_list.php','tools_add.php','tools_edit.php'])) echo 'active'; ?>"
-             href="/pages/tools_list.php">Tools</a>
+          <a class="nav-link <?php if(in_array($current_page, ['tools_list_assign.php','tools_add.php','tools_edit.php'])) echo 'active'; ?>"
+             href="/pages/tools_list_assign.php">Tools</a>
         </li>
+         <li class="nav-item">
+          <a class="nav-link <?php if(in_array($current_page, ['payments_list.php','payment_process.php'])) echo 'active'; ?>"
+             href="/pages/payments_list.php">Payment</a>
+        </li>
+        
       </ul>
     </div>
   </div>
