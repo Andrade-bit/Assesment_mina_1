@@ -40,9 +40,10 @@
           <a class="nav-link <?php if(in_array($current_page, ['tools_list_assign.php','tools_add.php','tools_edit.php'])) echo 'active'; ?>"
              href="/pages/tools_list_assign.php">Tools</a>
         </li>
+        
          <li class="nav-item">
-          <a class="nav-link <?php if(in_array($current_page, ['payments_list.php','payment_process.php'])) echo 'active'; ?>"
-             href="/pages/payments_list.php">Payment</a>
+          <a class="nav-link <?php if(in_array($current_page, ['payments_list.php','payment_list.php'])) echo 'active'; ?>"
+             href="/pages/payments_list.php">Payments</a>
         </li>
         
       </ul>
