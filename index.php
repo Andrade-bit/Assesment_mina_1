@@ -1,6 +1,12 @@
 <!-- index.php -->
 <?php 
 include "db.php";
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+ 
 
 $clients = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM clients"))['c'];
 $services = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM services"))['c'];
@@ -23,6 +29,8 @@ $revenue = $revRow['s'];
 
 <div class="container mt-4">
     <h1 class="mb-4">Dashboard</h1>
+    
+    <h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
 
     <div class="row g-3">
         <div class="col-md-3">
